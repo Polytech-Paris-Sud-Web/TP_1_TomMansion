@@ -1,0 +1,15 @@
+<div id="article" *ngIf="article.id >= 0">
+
+    <h1>Title</h1>
+    <h3> {{this.article.title}} </h3>
+
+    <h1>Content</h1>
+    <p> {{this.article.content}} </p>
+
+    <h1>Author</h1>
+    <p>Author: <b> {{this.article.author}} </b> </p>
+
+    insert text
+
+    <button (click)="deleteArticle()">Delete</button>
+</div>

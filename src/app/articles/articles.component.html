@@ -1,0 +1,4 @@
+<div class="articles">
+  <app-article *ngFor="let article of this.articles" [article]="article" (deleteRequest)="delete(article.id)">
+  </app-article>
+</div>

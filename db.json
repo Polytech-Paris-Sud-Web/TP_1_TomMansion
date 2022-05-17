@@ -1,0 +1,70 @@
+{
+  "articles": [
+    {
+      "id": 5,
+      "title": "Angular material",
+      "content": "I read something about angular material, i will try it soon",
+      "author": "Orangefire"
+    },
+    {
+      "id": 6,
+      "title": "Angular animations",
+      "content": "I read something about angular animations, i will try it soon",
+      "author": "Orangefire"
+    },
+    {
+      "id": 7,
+      "title": "Angular pipes",
+      "content": "I read something about angular pipes, i will try it soon",
+      "author": "Orangefire"
+    },
+    {
+      "id": 11,
+      "title": "a",
+      "content": "zd",
+      "author": "azd"
+    },
+    {
+      "id": 12,
+      "title": "Fake aaaa",
+      "content": "aaaa",
+      "author": "aaaa"
+    },
+    {
+      "id": 13,
+      "title": "Fake aaaa",
+      "content": "aaaa",
+      "author": "aaaa"
+    },
+    {
+      "id": 14,
+      "title": "Fake aaaaazdaz",
+      "content": "aaaaazdaz",
+      "author": "aaaa"
+    },
+    {
+      "id": 15,
+      "title": "Fake aaaaazdaz",
+      "content": "aaaaazdaz",
+      "author": "aaaa"
+    },
+    {
+      "id": 16,
+      "title": "Fake aaaaazdaz",
+      "content": "aaaaazdaz",
+      "author": "aaaa"
+    },
+    {
+      "id": 18,
+      "title": "Fake Titleaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "content": "zzz",
+      "author": "qzdzd"
+    },
+    {
+      "id": 19,
+      "title": "Fake a",
+      "content": "qzzdqzd",
+      "author": "zd"
+    }
+  ]
+}
