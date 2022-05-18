@@ -1,7 +1,3 @@
-.panel {
-  background-color: white;
-}
-
 .articles {
   display: flex;
   flex-wrap: wrap;

@@ -44,5 +44,8 @@ export class ArticlesComponent implements OnInit {
       this.articlesDisplay = this.articles;
     }
   }
+  ngOnChanges() {
+    this.updateArticles();
+  }
 }
 

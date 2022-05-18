@@ -11,7 +11,7 @@ import { Article } from '../article';
 export class ArticleReadComponent implements OnInit {
   id: number;
   article: Article = {
-    id: -1,
+    id: null,
     title: '',
     content: '',
     author: '',

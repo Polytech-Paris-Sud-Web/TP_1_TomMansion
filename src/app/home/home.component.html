@@ -1,9 +1,7 @@
 <h2>The 10 latest articles:</h2>
 
 <span *ngIf="articles">
-    <app-articles
-     [articles]="articles"
-     (updateRequest)="updateArticles()">
+    <app-articles [articles]="articles" (updateRequest)="updateArticles()">
     </app-articles>
 </span>
 <span *ngElse>

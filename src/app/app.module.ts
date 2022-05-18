@@ -14,6 +14,7 @@ import { ArticleReadComponent } from './article-read/article-read.component';
 import { HomeComponent } from './home/home.component';
 import { ArticlesAllComponent } from './articles-all/articles-all.component';
 import { AuthorComponent } from './author/author.component';
+import { AuthorService } from './author.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { AuthorComponent } from './author/author.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, AuthorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
