@@ -26,8 +26,6 @@ export class ArticlesAllComponent implements OnInit {
 
   async updateArticles(): Promise<void> {
     // Get all articles
-    console.log(this.articles);
     this.articles = await this.articleService.getArticles();
-    console.log(this.articles);
   }
 }
