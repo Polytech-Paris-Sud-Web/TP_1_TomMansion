@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { Article } from '../article';
 import { ArticleService } from '../article.service';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-articles',
@@ -9,21 +10,20 @@ import { ArticleService } from '../article.service';
 })
 export class ArticlesComponent implements OnInit {
 
-  articles: Article[];
+  @Input() articles!: Article[];
+  @Output() updateRequest = new EventEmitter<void>();
 
   constructor(private articleService: ArticleService) {
   }
 
   async ngOnInit() {
-    this.articles = await this.articleService.getArticles();
   }
 
   async delete(id: number): Promise<void> {
     await this.articleService.deleteArticle(id);
     this.articles = await this.articleService.getArticles();
-  }
-
-  async updateArticles(): Promise<void> {
-    this.articles = await this.articleService.getArticles();
+    // Tell parent to update list
+    this.updateRequest.emit();
   }
 }
+

@@ -27,14 +27,14 @@ export class ArticleCreationComponent implements OnInit {
   ngOnInit() {
   }
 
-  createArticle() {
-    this.articleService.createArticle({
+  async createArticle() {
+    await this.articleService.createArticle({
       title: this.articleForm.get('title').value,
       content: this.articleForm.get('content').value,
       author: this.articleForm.get('author').value,
     });
     this.creationRequest.emit();
-    this.router.navigateByUrl('/second')
+    this._router.navigateByUrl('/articles')
   }
 
 }

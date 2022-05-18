@@ -11,6 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ArticleReadComponent } from './article-read/article-read.component';
+import { HomeComponent } from './home/home.component';
+import { ArticlesAllComponent } from './articles-all/articles-all.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { ArticleReadComponent } from './article-read/article-read.component';
     ArticleCreationComponent,
     TopBarComponent,
     ArticleReadComponent,
+    HomeComponent,
+    ArticlesAllComponent,
   ],
   imports: [
     RouterModule.forRoot([
       { path: 'create', component: ArticleCreationComponent },
-      { path: 'articles', component: ArticlesComponent },
+      { path: 'articles', component: ArticlesAllComponent },
       { path: 'articles/:id', component: ArticleReadComponent },
-      { path: '', component: ArticlesComponent }
+      { path: '', component: HomeComponent }
     ]),
     BrowserModule,
     HttpClientModule,

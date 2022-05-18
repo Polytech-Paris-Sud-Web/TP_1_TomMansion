@@ -1,0 +1,19 @@
+✔ L'ensemble des fonctionnalite du TP @done(22-05-18 08:48)
+
+je peux consulter voir les dix derniers articles sur la page d'acceuil:
+    ✔ composant acceuil @started(22-05-18 08:52) @done(22-05-18 09:12) @lasted(20m27s)
+    ☐ test id auto increment
+    ☐ ajout date?
+
+☐ je dois pouvoir rechercher dans les articles existant par titre ou contenu
+
+je peux consulter la biographie de l'auteur correspondant a l'article choisi:
+    ☐ composant autheur
+    ☐ lien clicable sur liste d'articles
+
+je dois pouvoir voir en details un article en particulier de maniere isolé :Vue d'un article:
+    ☐ content
+    ☐ author
+    ☐ lien author clicable
+
+

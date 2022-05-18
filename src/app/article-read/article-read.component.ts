@@ -37,7 +37,6 @@ export class ArticleReadComponent implements OnInit {
     await this.articleService.deleteArticle(this.id);
     // Redirect to the article list
     this.router.navigateByUrl('/articles');
-
   }
 
   ngOnInit() {
