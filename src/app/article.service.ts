@@ -20,16 +20,22 @@ export class ArticleService {
   public async deleteArticle(id: number) {
     return this.http.delete(`http://localhost:3000/articles/${id}`).toPromise();
   }
-  public async createArticle(Input: { title: string; content: string; author: string; }) {
-    const articles = await this.getArticles();
-    const maxId = articles.reduce((max, article) => article.id > max ? article.id : max, 0);
 
-    const article: Article = {
-      id: maxId + 1,
+  public async createArticle(Input: { title: string; content: string; author: string; }): Promise<number> {
+    // const articles = await this.getArticles();
+    // const maxId = articles.reduce((max, article) => article.id > max ? article.id : max, 0);
+
+    // ID will auto increment
+    // Latest article will always have the highest ID
+
+    const article = {
+      // id: maxId + 1,
       title: Input.title,
       content: Input.content,
       author: Input.author,
-    };
-    return this.http.post("http://localhost:3000/articles", article).toPromise();
+    }
+    const retArticle: Article = await this.http.post<Article>("http://localhost:3000/articles", article).toPromise();
+
+    return retArticle.id;
   }
 }

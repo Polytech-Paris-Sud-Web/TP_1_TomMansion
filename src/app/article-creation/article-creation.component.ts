@@ -18,9 +18,9 @@ export class ArticleCreationComponent implements OnInit {
     private articleService: ArticleService,
     private _router: Router) {
     this.articleForm = this.fb.group({
-      title: ['Fake Title', Validators.required],
-      content: ['', Validators.required],
-      author: ['', Validators.required],
+      title: ['Fake Title'], // Validators.required
+      content: [''], // Validators.required
+      author: [''], // Validators.required
     });
   }
 
@@ -28,13 +28,13 @@ export class ArticleCreationComponent implements OnInit {
   }
 
   async createArticle() {
-    await this.articleService.createArticle({
+    const newId = await this.articleService.createArticle({
       title: this.articleForm.get('title').value,
       content: this.articleForm.get('content').value,
       author: this.articleForm.get('author').value,
     });
     this.creationRequest.emit();
-    this._router.navigateByUrl('/articles')
+    this._router.navigateByUrl(`/articles/${newId}`)
   }
 
 }

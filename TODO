@@ -2,8 +2,8 @@
 
 je peux consulter voir les dix derniers articles sur la page d'acceuil:
     ✔ composant acceuil @started(22-05-18 08:52) @done(22-05-18 09:12) @lasted(20m27s)
-    ☐ test id auto increment
-    ☐ ajout date?
+    ✔ test id auto increment @done(22-05-18 09:18)
+    ✘ ajout date? @cancelled(22-05-18 09:18)
 
 ☐ je dois pouvoir rechercher dans les articles existant par titre ou contenu
 
