@@ -1,4 +1,4 @@
-<div class="article">
+<div class="article panel">
     <a [routerLink]="['/articles/', article.id]">
         <h3> {{this.article.title}} </h3>
     </a>
@@ -10,5 +10,5 @@
             <b> {{this.article.author}} </b>
         </a>
     </p>
-    <button (click)="delete()">Delete</button>
+    <button (click)="delete()" class="red">Delete</button>
 </div>

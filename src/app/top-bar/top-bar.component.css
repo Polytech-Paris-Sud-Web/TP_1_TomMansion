@@ -3,12 +3,15 @@
   display: flex;
   padding: 0.5rem;
   gap: 0.5rem;
-  background-color: black;
-  color: white;
+  background-color: gainsboro;
 }
 
 a {
   text-decoration: none;
   border: solid 1px #ccc;
   padding: 0px 20px 0px 20px;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
 }

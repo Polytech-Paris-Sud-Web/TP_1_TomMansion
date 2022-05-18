@@ -17,8 +17,7 @@ export class AuthorComponent implements OnInit {
   constructor(
     private articleService: ArticleService,
     private authorService: AuthorService,
-    private activatedRoute: ActivatedRoute,
-    private router: Router
+    private activatedRoute: ActivatedRoute
     ) {
 
     // get the author name from path

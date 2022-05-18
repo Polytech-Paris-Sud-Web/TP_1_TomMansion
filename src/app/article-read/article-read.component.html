@@ -1,5 +1,4 @@
-<div id="article" *ngIf="article.id >= 0">
-
+<div id="article" class="panel" *ngIf="article.id >= 0">
     <h1>Title</h1>
     <h3> {{this.article.title}} </h3>
 
@@ -11,7 +10,5 @@
         <b> {{this.article.author}} </b>
     </a> </b> </p>
 
-    insert text
-
-    <button (click)="deleteArticle()">Delete</button>
+    <button (click)="deleteArticle()" class="red">Delete</button>
 </div>

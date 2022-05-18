@@ -1,8 +1,10 @@
+.panel {
+  background-color: white;
+}
+
 .articles {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(255, 247, 238);
   border-radius: 5px;
+  justify-content: center;
 }
