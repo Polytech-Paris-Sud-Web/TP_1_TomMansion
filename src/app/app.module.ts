@@ -13,6 +13,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ArticleReadComponent } from './article-read/article-read.component';
 import { HomeComponent } from './home/home.component';
 import { ArticlesAllComponent } from './articles-all/articles-all.component';
+import { AuthorComponent } from './author/author.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,14 @@ import { ArticlesAllComponent } from './articles-all/articles-all.component';
     ArticleReadComponent,
     HomeComponent,
     ArticlesAllComponent,
+    AuthorComponent,
   ],
   imports: [
     RouterModule.forRoot([
       { path: 'create', component: ArticleCreationComponent },
       { path: 'articles', component: ArticlesAllComponent },
       { path: 'articles/:id', component: ArticleReadComponent },
+      { path: 'authors/:name', component: AuthorComponent },
       { path: '', component: HomeComponent }
     ]),
     BrowserModule,

@@ -1,0 +1,19 @@
+<h2>{{author}}</h2>
+
+<h3>
+    About :
+</h3>
+
+<p>{{about}}</p>
+
+<h3>
+    Articles :
+</h3>
+
+<span *ngIf="articles">
+    <app-articles [articles]="articles" (updateRequest)="getArticles()">
+    </app-articles>
+</span>
+<span *ngIf="!articles">
+    Loading
+</span>

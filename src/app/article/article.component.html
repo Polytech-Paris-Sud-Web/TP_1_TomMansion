@@ -3,6 +3,12 @@
         <h3> {{this.article.title}} </h3>
     </a>
     <p> {{this.article.content}} </p>
-    <p>Author: <b> {{this.article.author}} </b> </p>
+
+    <p>
+        Author:
+        <a [routerLink]="['/authors/', article.author]">
+            <b> {{this.article.author}} </b>
+        </a>
+    </p>
     <button (click)="delete()">Delete</button>
 </div>

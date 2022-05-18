@@ -7,7 +7,9 @@
     <p> {{this.article.content}} </p>
 
     <h1>Author</h1>
-    <p>Author: <b> {{this.article.author}} </b> </p>
+    <p>Author: <b>  <a [routerLink]="['/authors/', article.author]">
+        <b> {{this.article.author}} </b>
+    </a> </b> </p>
 
     insert text
 

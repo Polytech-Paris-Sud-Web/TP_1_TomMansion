@@ -6,6 +6,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class ArticleService {
+
   constructor(private http: HttpClient) {
   }
 
@@ -15,6 +16,13 @@ export class ArticleService {
 
   public async getArticle(id: number): Promise<Article> {
     return this.http.get<Article>(`http://localhost:3000/articles/${id}`).toPromise();
+  }
+  public async getAuthorArticles(author: string):  Promise<Article[]> {
+    const allArticles = await this.getArticles();
+
+    return allArticles.filter((a:Article) => {
+      return a.author === author
+    })
   }
 
   public async deleteArticle(id: number) {
