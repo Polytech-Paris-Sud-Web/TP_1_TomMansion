@@ -1,4 +1,20 @@
-<div class="articles">
-  <app-article *ngFor="let article of this.articles" [article]="article" (deleteRequest)="delete(article.id)">
-  </app-article>
+<!-- Article filter input -->
+Filters : <input type="text" #filtersInput (keyup)="filter(filtersInput.value)">
+
+<!-- Article List -->
+<div class="articles" *ngElse>
+  No articles
 </div>
+
+<div *ngIf="articlesDisplay.length;then art else noArt">
+</div>
+
+<ng-template #art>
+  <div class="articles">
+    <app-article *ngFor="let article of this.articlesDisplay" [article]="article" (deleteRequest)="delete(article.id)">
+    </app-article>
+  </div>
+</ng-template>
+<ng-template #noArt>
+  No articles
+</ng-template>

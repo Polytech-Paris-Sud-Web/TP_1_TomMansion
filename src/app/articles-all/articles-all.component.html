@@ -1,3 +1,11 @@
+<h2>All the articles</h2>
 
-<!-- TODO input filter -->
-<app-articles [articles]="articles"></app-articles>
+<span *ngIf="articles">
+    <app-articles
+     [articles]="articles"
+     (updateRequest)="updateArticles()">
+    </app-articles>
+</span>
+<span *ngIf="!articles">
+    Loading
+</span>

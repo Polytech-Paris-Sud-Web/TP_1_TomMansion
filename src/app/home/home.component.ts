@@ -21,7 +21,8 @@ export class HomeComponent implements OnInit {
   async updateArticles(): Promise<void> {
     this.articles = await this.articleService.getArticles();
     // Sort by creation date (ID)
-    this.articles = this.articles.sort((a:Article, b:Article) => b.id - a .id)
+    this.articles =
+     this.articles.sort((a:Article, b:Article) => b.id - a.id)
 
     // Get the 10 first articles
     this.articles = this.articles.splice(0, 10);

@@ -16,8 +16,7 @@ export class ArticlesAllComponent implements OnInit {
 
   async ngOnInit() {
     // Get all the articles
-    this.articles = await this.articleService.getArticles();
-    // TODO: articles filters
+    await this.updateArticles()
   }
 
   async delete(id: number): Promise<void> {
@@ -26,6 +25,7 @@ export class ArticlesAllComponent implements OnInit {
   }
 
   async updateArticles(): Promise<void> {
+    // Get all articles
     this.articles = await this.articleService.getArticles();
   }
 }

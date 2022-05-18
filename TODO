@@ -5,7 +5,7 @@ je peux consulter voir les dix derniers articles sur la page d'acceuil:
     ✔ test id auto increment @done(22-05-18 09:18)
     ✘ ajout date? @cancelled(22-05-18 09:18)
 
-☐ je dois pouvoir rechercher dans les articles existant par titre ou contenu
+✔ je dois pouvoir rechercher dans les articles existant par titre ou contenu @started(22-05-18 09:24) @done(22-05-18 10:12) @lasted(48m55s)
 
 je peux consulter la biographie de l'auteur correspondant a l'article choisi:
     ☐ composant autheur
@@ -16,4 +16,5 @@ je dois pouvoir voir en details un article en particulier de maniere isolé :Vue
     ☐ author
     ☐ lien author clicable
 
+☐ style
 

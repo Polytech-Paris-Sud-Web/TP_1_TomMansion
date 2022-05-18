@@ -1,6 +1,19 @@
-# SimpleApp
+# ToMansion TP1
+
+J'ai eu le plaisir d'être aidé et d'avoir aidé de mon mieux:
+- Sophie N
+- Remy C
+- Leandre B
+- Nathan P
+
+I did what I could
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+
+## JSON DB:
+```bash
+json-server --watch db.json
+```
 
 ## Development server
 
